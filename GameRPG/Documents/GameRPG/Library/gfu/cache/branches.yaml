@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1666186674, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 2
+  lastUpdatedAtString: 2019-06-01T00:46:26.575+07:00
+  initializedAtString: 2019-06-01T00:46:26.538+07:00
+  localBranches:
+  - name: Animatedwalk
+    tracking: 
+  - name: Game
+    tracking: origin/Game
+  - name: VetkaMarka
+    tracking: 
+  remoteBranches:
+  - name: origin/AnimatedWalk
+    tracking: '[None]'
+  - name: origin/Game
+    tracking: '[None]'
+  - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/vetkaMarka
+    tracking: '[None]'
+  remotes:
+  - name: origin
+    url: https://github.com/NotJackDaniels/Game.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  localConfigBranches:
+    keys:
+    - Animatedwalk
+    - Game
+    - VetkaMarka
+    values:
+    - name: Animatedwalk
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+    - name: Game
+      remote:
+        name: origin
+        url: https://github.com/NotJackDaniels/Game.git
+      trackingBranch: Game
+    - name: VetkaMarka
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+  remoteConfigBranches:
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - AnimatedWalk
+      - Game
+      - HEAD
+      - vetkaMarka
+    subKeyValues:
+    - Values:
+      - name: AnimatedWalk
+        remote:
+          name: origin
+          url: https://github.com/NotJackDaniels/Game.git
+        trackingBranch: 
+      - name: Game
+        remote:
+          name: origin
+          url: https://github.com/NotJackDaniels/Game.git
+        trackingBranch: 
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/NotJackDaniels/Game.git
+        trackingBranch: 
+      - name: vetkaMarka
+        remote:
+          name: origin
+          url: https://github.com/NotJackDaniels/Game.git
+        trackingBranch: 
+  configRemotes:
+    keys:
+    - origin
+    values:
+    - name: origin
+      url: https://github.com/NotJackDaniels/Game.git

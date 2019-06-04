@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\C&amp;C_Pack\Goblin_rouge\Script\Goblin_ro_ctrl.cs">
+    <Files>
+      <File FileName="Assets\Script\CameraControll.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\BodyMove.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\AnimationHero.cs" Line="34" Column="4" />
+      <File FileName="Assets\C&amp;C_Pack\Goblin_rouge\Script\Goblin_ro_ctrl.cs" Line="128" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
