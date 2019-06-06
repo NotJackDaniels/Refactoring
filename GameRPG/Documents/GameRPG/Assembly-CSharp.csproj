@@ -60,6 +60,7 @@
      <Compile Include="Assets\Script\BodyMove.cs" />
      <Compile Include="Assets\Script\CameraControll.cs" />
      <Compile Include="Assets\Script\ChangeCamera.cs" />
+     <Compile Include="Assets\Script\RotatePersonWithArrows.cs" />
      <Compile Include="Assets\Script\SimpleCamera.cs" />
      <Compile Include="Assets\Script\SmoothCameraWithBumper.cs" />
      <Compile Include="Assets\Script\ThirdPersonCharacterController.cs" />

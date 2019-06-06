@@ -4,6 +4,13 @@ public class ThirdPersonCharacterController : MonoBehaviour
 {
     public float Speed;
 
+
+    void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         PlayerMovement();

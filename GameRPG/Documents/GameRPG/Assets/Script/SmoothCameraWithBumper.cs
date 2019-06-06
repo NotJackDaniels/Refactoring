@@ -63,10 +63,12 @@ public class SmoothCameraWithBumper : MonoBehaviour
         mouseX += Input.GetAxis("Mouse X") * RotationSpeed * Time.deltaTime;
         mouseY += Input.GetAxis("Mouse Y") * RotationSpeed * Time.deltaTime;
         mouseY = Mathf.Clamp(mouseY, -60, 60);
-
-        player.rotation = Quaternion.Euler(0, mouseX, 0);
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            player.rotation = Quaternion.Euler(0, mouseX, 0);
+        }
         target.rotation = Quaternion.Euler(-mouseY, mouseX, 0);
 
-        //transform.LookAt(target);
+        transform.LookAt(target);
     }
 }

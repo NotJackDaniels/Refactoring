@@ -29,7 +29,7 @@ public class AnimationHero : MonoBehaviour {
             animator.SetBool("Walk", true);
 		}
 
-		if (Input.GetKeyDown (KeyCode.F)) {
+		if (Input.GetKeyDown (KeyCode.Mouse0)) {
 			animator.SetBool ("Walk", false);
 			animator.SetTrigger ("Attack");
 
