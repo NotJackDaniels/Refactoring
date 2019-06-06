@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationHero : MonoBehaviour {
-
+    public GameObject triggerDamage;
     Animator animator;
 
     float vertical;
@@ -29,10 +29,10 @@ public class AnimationHero : MonoBehaviour {
             animator.SetBool("Walk", true);
 		}
 
-		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+		if (Input.GetKeyDown (KeyCode.F)) {
 			animator.SetBool ("Walk", false);
 			animator.SetTrigger ("Attack");
-
+            triggerDamage.SetActive(true);
 		}
 		
     }
