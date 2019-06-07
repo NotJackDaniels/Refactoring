@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAnimationScript : MonoBehaviour {
+public class AnimationHero : MonoBehaviour {
     public GameObject triggerDamage;
     Animator animator;
 
@@ -23,9 +23,8 @@ public class PlayerAnimationScript : MonoBehaviour {
 		if (vertical == 0 && horizontal == 0) 
 		{
             animator.SetBool("Walk", false);
-
 		}
-        else
+        else if (vertical >= 0.1f || vertical <= -0.1f || horizontal >= 0.1f || horizontal <= -0.1f)
         {
             animator.SetBool("Walk", true);
 		}
