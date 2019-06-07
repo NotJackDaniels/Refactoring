@@ -9,23 +9,34 @@ public class EnemyAI : MonoBehaviour {
     public float speed;
     private Transform target;
     public int healthMonster;
-    // Use this for initialization
+    Animator animator;
+
+
     void Start()
     {
+        animator = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (Vector3.Distance(transform.position, target.transform.position) < seeDistance)
         {
+            transform.LookAt(target.transform);
             if (Vector3.Distance(transform.position, target.transform.position) < attackDistance)
             {
-                transform.LookAt(target.transform);
+                animator.SetBool("Walk", true);
                 transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
-                Debug.Log(healthMonster);
             }
+            else
+            {
+                animator.SetBool("Walk", false);
+            }
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
         }
     }
 }

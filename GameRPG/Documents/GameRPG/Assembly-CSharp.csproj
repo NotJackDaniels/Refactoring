@@ -56,12 +56,12 @@
      <Compile Include="Assets\miniMap-TurzoStudio\Scripts\GUIManager.cs" />
      <Compile Include="Assets\miniMap-TurzoStudio\Scripts\miniCameraScript.cs" />
      <Compile Include="Assets\miniMap-TurzoStudio\Scripts\Player.cs" />
-     <Compile Include="Assets\Script\AnimationHero.cs" />
      <Compile Include="Assets\Script\AxeDamage.cs" />
      <Compile Include="Assets\Script\BodyMove.cs" />
      <Compile Include="Assets\Script\CameraControll.cs" />
      <Compile Include="Assets\Script\ChangeCamera.cs" />
      <Compile Include="Assets\Script\EnemyAI.cs" />
+     <Compile Include="Assets\Script\PlayerAnimationScript.cs" />
      <Compile Include="Assets\Script\RotatePersonWithArrows.cs" />
      <Compile Include="Assets\Script\SimpleCamera.cs" />
      <Compile Include="Assets\Script\SmoothCameraWithBumper.cs" />
