@@ -23,13 +23,13 @@ public class ChangeCamera : MonoBehaviour {
 		}
 		
 		if(whichcam == false){
-			cam3d.active = true;
-			camMap.active = false;
+			cam3d.SetActive(true);
+			camMap.SetActive(false);
 		}
 
 		if(whichcam == true){
-			cam3d.active = false;
-			camMap.active = true;
+			cam3d.SetActive(false);
+			camMap.SetActive(true);
 		}
 			
 	}
