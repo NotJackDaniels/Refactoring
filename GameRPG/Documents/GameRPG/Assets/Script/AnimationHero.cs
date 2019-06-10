@@ -24,7 +24,7 @@ public class AnimationHero : MonoBehaviour {
 		{
             animator.SetBool("Walk", false);
 		}
-        else if (vertical >= 0.1f || vertical <= -0.1f || horizontal >= 0.1f || horizontal <= -0.1f)
+        else if (vertical != 0 || horizontal != 0)
         {
             animator.SetBool("Walk", true);
 		}
