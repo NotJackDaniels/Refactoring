@@ -25,30 +25,37 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        currentDistance = Vector3.Distance(transform.position, target.position);
-        if (currentDistance < seeDistance)
-        {
-            heading = (transform.position - target.position).normalized;
-            heading.y = 0;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(-heading), rotationSpeed);
-            if (currentDistance < triggerDistance && currentDistance > attackDistance)
+        if(healthMonster > 0) { 
+            currentDistance = Vector3.Distance(transform.position, target.position);
+            if (currentDistance < seeDistance)
             {
-                animator.SetBool("Attack", false);
-                animator.SetBool("Run", true);
-                transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
+                heading = (transform.position - target.position).normalized;
+                heading.y = 0;
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(-heading), rotationSpeed);
+                if (currentDistance < triggerDistance && currentDistance > attackDistance)
+                {
+                    animator.SetBool("Attack", false);
+                    animator.SetBool("Run", true);
+                    transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
+                }
+                else
+                {
+                    animator.SetBool("Run", false);
+                    if (currentDistance <= attackDistance)
+                    {
+                        animator.SetBool("Attack", true);
+                    }
+                }
             }
             else
             {
                 animator.SetBool("Run", false);
-                if (currentDistance <= attackDistance)
-                {
-                    animator.SetBool("Attack", true);
-                }
             }
         }
-        else
-        {
+        else{
+            animator.SetBool("Attack", false);
             animator.SetBool("Run", false);
+            animator.SetBool("Die", true);
         }
     }
 }
