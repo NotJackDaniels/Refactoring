@@ -293,7 +293,9 @@
     <Compile Include="Assets\Script\BodyMove.cs" />
     <Compile Include="Assets\Script\CameraControll.cs" />
     <Compile Include="Assets\Script\ChangeCamera.cs" />
+    <Compile Include="Assets\Script\DialogNextClick.cs" />
     <Compile Include="Assets\Script\EnemyAI.cs" />
+    <Compile Include="Assets\Script\NpcDialogs.cs" />
     <Compile Include="Assets\Script\RotatePersonWithArrows.cs" />
     <Compile Include="Assets\Script\SimpleCamera.cs" />
     <Compile Include="Assets\Script\SmoothCameraWithBumper.cs" />
@@ -305,6 +307,7 @@
     <None Include="Assets\BUILDING\Fantasy_Kingdom_Pack_Lite\Demo\Read me01.txt" />
     <None Include="Assets\C&amp;C_Pack\Goblin_rouge\readme.txt" />
     <None Include="Assets\FantasyEnvironments\Environments\README.txt" />
+    <None Include="Assets\fantasy horde_Dwarfs\Shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
     <None Include="Assets\fantasy horde_goblin\shader\fantasy horde-goblin_Compressed MaskedShader2sided.shader" />
     <None Include="Assets\miniMap-TurzoStudio\Read Me First.txt" />
     <None Include="Assets\miniMap-TurzoStudio\Shader,Texture,Mask\MaskShader.shader" />
