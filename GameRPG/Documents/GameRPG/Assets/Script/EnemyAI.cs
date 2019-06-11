@@ -5,6 +5,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
 
+    public bool QuestKillGoblinsInForrest = false;
     public float seeDistance = 5f;
     public float triggerDistance = 5f;
     private float currentTriggerDistance;
@@ -80,6 +81,7 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("Run", false);
             animator.SetBool("Die", true);
             capsuleCollider.enabled = false;
+            QuestKillGoblinsInForrest = true;
         }
     }
 }

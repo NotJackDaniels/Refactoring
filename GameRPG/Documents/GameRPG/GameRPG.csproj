@@ -294,9 +294,10 @@
     <Compile Include="Assets\Script\CameraControll.cs" />
     <Compile Include="Assets\Script\CatAI.cs" />
     <Compile Include="Assets\Script\ChangeCamera.cs" />
-    <Compile Include="Assets\Script\DialogNextClick.cs" />
+    <Compile Include="Assets\Script\Dialog_1NextClick.cs" />
+    <Compile Include="Assets\Script\Dialog_2NextClick.cs" />
     <Compile Include="Assets\Script\EnemyAI.cs" />
-    <Compile Include="Assets\Script\NpcDialogs.cs" />
+    <Compile Include="Assets\Script\FirstQuestNpcDialog.cs" />
     <Compile Include="Assets\Script\RotatePersonWithArrows.cs" />
     <Compile Include="Assets\Script\SimpleCamera.cs" />
     <Compile Include="Assets\Script\SmoothCameraWithBumper.cs" />
