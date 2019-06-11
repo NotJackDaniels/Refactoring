@@ -2827,7 +2827,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 479889e73ed3534469e759b598aca9c5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 373.13904
+      value: 372.04
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 479889e73ed3534469e759b598aca9c5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2876,6 +2876,16 @@ Prefab:
     - target: {fileID: 100000, guid: 479889e73ed3534469e759b598aca9c5, type: 2}
       propertyPath: m_Name
       value: VillageStartQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 136459886277758616, guid: 479889e73ed3534469e759b598aca9c5,
+        type: 2}
+      propertyPath: m_Height
+      value: 1.8213063
+      objectReference: {fileID: 0}
+    - target: {fileID: 136459886277758616, guid: 479889e73ed3534469e759b598aca9c5,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.41065305
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 479889e73ed3534469e759b598aca9c5, type: 2}
