@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
 
     public float seeDistance = 5f;
     public float triggerDistance = 5f;
+    private float currentTriggerDistance;
     public float attackDistance = 1f;
     private float currentDistance;
     public float rotationSpeed = 1f;
@@ -25,6 +26,7 @@ public class EnemyAI : MonoBehaviour
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.isStopped = true;
+        currentTriggerDistance = triggerDistance;
     }
 
 
@@ -48,8 +50,9 @@ public class EnemyAI : MonoBehaviour
             else
             {
                 animator.SetBool("Attack", false);
-                if (currentDistance <= triggerDistance) //зона триггера (бежит к игроку)
+                if (currentDistance <= currentTriggerDistance) //зона триггера (бежит к игроку)
                 {
+                    currentTriggerDistance = seeDistance;
                     animator.SetBool("Run", true);
                     agent.isStopped = false; //враг начинает бежать
                 }
@@ -65,6 +68,7 @@ public class EnemyAI : MonoBehaviour
                     else //за пределами зоны видимости
                     {
                         animator.SetBool("PrepareForBattle", false);
+                        currentTriggerDistance = triggerDistance;
                     }
                 }
             }
