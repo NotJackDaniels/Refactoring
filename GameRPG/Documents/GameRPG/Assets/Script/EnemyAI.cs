@@ -10,7 +10,7 @@ public class EnemyAI : MonoBehaviour
     public float triggerDistance = 5f;
     private float currentTriggerDistance;
     public float attackDistance = 1f;
-    private float currentDistance;
+    public float currentDistance;
     public float rotationSpeed = 1f;
     private Transform target;
     public int healthMonster;
