@@ -288,21 +288,26 @@
     <Compile Include="Assets\miniMap-TurzoStudio\Scripts\GUIManager.cs" />
     <Compile Include="Assets\miniMap-TurzoStudio\Scripts\miniCameraScript.cs" />
     <Compile Include="Assets\miniMap-TurzoStudio\Scripts\Player.cs" />
-    <Compile Include="Assets\Script\AnimationHero.cs" />
-    <Compile Include="Assets\Script\AxeDamage.cs" />
-    <Compile Include="Assets\Script\BodyMove.cs" />
-    <Compile Include="Assets\Script\CameraControll.cs" />
     <Compile Include="Assets\Script\CatAI.cs" />
     <Compile Include="Assets\Script\ChangeCamera.cs" />
     <Compile Include="Assets\Script\Dialog_1NextClick.cs" />
     <Compile Include="Assets\Script\Dialog_2NextClick.cs" />
     <Compile Include="Assets\Script\EnemyAI.cs" />
+    <Compile Include="Assets\Script\EnemyDamage.cs" />
     <Compile Include="Assets\Script\FirstQuestNpcDialog.cs" />
-    <Compile Include="Assets\Script\RotatePersonWithArrows.cs" />
+    <Compile Include="Assets\Script\Player\AnimationHero.cs" />
+    <Compile Include="Assets\Script\Player\AxeDamage.cs" />
+    <Compile Include="Assets\Script\Player\BodyMove.cs" />
+    <Compile Include="Assets\Script\Player\CameraControll.cs" />
+    <Compile Include="Assets\Script\Player\PlayerBarDisplay.cs" />
+    <Compile Include="Assets\Script\Player\playerstat.cs" />
+    <Compile Include="Assets\Script\Player\RotatePersonWithArrows.cs" />
+    <Compile Include="Assets\Script\Player\SmoothCameraWithBumper.cs" />
+    <Compile Include="Assets\Script\Player\Stats.cs" />
+    <Compile Include="Assets\Script\Player\ThirdPersonCharacterController.cs" />
+    <Compile Include="Assets\Script\Player\TimeStart.cs" />
+    <Compile Include="Assets\Script\Player\weaponstat.cs" />
     <Compile Include="Assets\Script\SimpleCamera.cs" />
-    <Compile Include="Assets\Script\SmoothCameraWithBumper.cs" />
-    <Compile Include="Assets\Script\ThirdPersonCharacterController.cs" />
-    <Compile Include="Assets\Script\TimeStart.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BUILDING\3DForge\FantasyExteriors\Village &amp; Towns\Documents\Blacksmith v1.0 - user guide.txt" />
