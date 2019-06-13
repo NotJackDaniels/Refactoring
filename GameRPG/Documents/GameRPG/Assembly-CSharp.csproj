@@ -78,6 +78,7 @@
      <Compile Include="Assets\Script\SimpleCamera.cs" />
      <None Include="Assets\C&amp;C_Pack\Goblin_rouge\readme.txt" />
      <None Include="Assets\BUILDING\Fantasy_Kingdom_Pack_Lite\Demo\Read me01.txt" />
+     <None Include="Assets\NPC\Meshtint Free Barbarian\www.meshtint.com.txt" />
      <None Include="Assets\fantasy horde_goblin\shader\fantasy horde-goblin_Compressed MaskedShader2sided.shader" />
      <None Include="Assets\Readme.txt" />
      <None Include="Assets\miniMap-TurzoStudio\Read Me First.txt" />
