@@ -58,6 +58,7 @@
      <Compile Include="Assets\miniMap-TurzoStudio\Scripts\Player.cs" />
      <Compile Include="Assets\Script\CatAI.cs" />
      <Compile Include="Assets\Script\ChangeCamera.cs" />
+     <Compile Include="Assets\Script\CloudMove.cs" />
      <Compile Include="Assets\Script\Dialog_1NextClick.cs" />
      <Compile Include="Assets\Script\Dialog_2NextClick.cs" />
      <Compile Include="Assets\Script\EnemyAI.cs" />
@@ -81,6 +82,7 @@
      <None Include="Assets\BUILDING\Fantasy_Kingdom_Pack_Lite\Demo\Read me01.txt" />
      <None Include="Assets\NPC\Meshtint Free Barbarian\www.meshtint.com.txt" />
      <None Include="Assets\fantasy horde_goblin\shader\fantasy horde-goblin_Compressed MaskedShader2sided.shader" />
+     <None Include="Assets\SimpleSky\ReadMe.txt" />
      <None Include="Assets\Readme.txt" />
      <None Include="Assets\miniMap-TurzoStudio\Read Me First.txt" />
      <None Include="Assets\BUILDING\Baker House\Readme.txt" />
