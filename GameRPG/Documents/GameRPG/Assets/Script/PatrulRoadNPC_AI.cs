@@ -8,11 +8,11 @@ public class PatrulRoadNPC_AI : MonoBehaviour {
     private float currentDistance;
     public float startWaitTime;
     public float stopDistanse;
-    private float rotationSpeed = 8f;
+    private float rotationSpeed = 16f;
 
     public Transform[] moveSpots;
     private int k = 0; // обход по порядку
-    private bool startWay = false; // для обхода маршрута
+    private bool startWay = false; // для обхода маршрута  
 
     Animator animator;
     Vector3 heading;
@@ -51,7 +51,10 @@ public class PatrulRoadNPC_AI : MonoBehaviour {
                 if (k < moveSpots.Length - 1 && startWay == false)
                 {
                     k++;
-                    if (k == moveSpots.Length - 1) startWay = true;
+                    if (k == moveSpots.Length - 1)
+                    {
+                        startWay = true;                        
+                    }
                 }                    
                 else
                 {
@@ -62,7 +65,7 @@ public class PatrulRoadNPC_AI : MonoBehaviour {
                 waitTime = startWaitTime;
             }
             else
-            {                
+            {
                 animator.SetBool("Walk", false);
                 waitTime -= Time.deltaTime;
             }
