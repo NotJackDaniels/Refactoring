@@ -63,6 +63,7 @@
      <Compile Include="Assets\Script\EnemyAI.cs" />
      <Compile Include="Assets\Script\EnemyDamage.cs" />
      <Compile Include="Assets\Script\FirstQuestNpcDialog.cs" />
+     <Compile Include="Assets\Script\PatrulRoadNPC_AI.cs" />
      <Compile Include="Assets\Script\Player\AnimationHero.cs" />
      <Compile Include="Assets\Script\Player\AxeDamage.cs" />
      <Compile Include="Assets\Script\Player\BodyMove.cs" />
