@@ -4,7 +4,7 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-
+    public int EnemyCoins;
     public bool QuestKillGoblinsInForrest = false;
     public float seeDistance = 5f;
     public float triggerDistance = 5f;
@@ -82,6 +82,9 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("Die", true);
             capsuleCollider.enabled = false;
             QuestKillGoblinsInForrest = true;
+            money_player.money += EnemyCoins; // добавляем монеты в указанную ссылку
+            GameObject.FindGameObjectWithTag("Player").GetComponent<money_player>().TextMoney.text = money_player.money.ToString(); // вывод количеста монет на экран
+            EnemyCoins = 0;
         }
     }
 }
