@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-
+    public int damage = 3;
     public GameObject damageCapsule;
     private float currentTime = 0;
     public float timeOfEachAttack = 1f;
@@ -36,7 +36,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
-            collider.GetComponent<playerstat>().curHP -= 3;
+            collider.GetComponent<playerstat>().curHP -= damage;
         }
     }
 }

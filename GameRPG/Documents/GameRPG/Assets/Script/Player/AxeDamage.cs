@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AxeDamage : MonoBehaviour {
 
+    public int damage = 3;
     // Use this for initialization
     void Start()
     {
@@ -20,7 +21,7 @@ public class AxeDamage : MonoBehaviour {
     {
         if (col.tag == "MonsterAI")
         {
-            col.GetComponent<EnemyAI>().healthMonster -= 3;
+            col.GetComponent<EnemyAI>().healthMonster -= damage;
         }
     }
 }

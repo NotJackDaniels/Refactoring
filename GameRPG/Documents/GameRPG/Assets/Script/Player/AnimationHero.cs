@@ -29,11 +29,33 @@ public class AnimationHero : MonoBehaviour {
             animator.SetBool("Walk", true);
 		}
 
-		if (Input.GetKeyDown (KeyCode.F)) {
-			animator.SetBool ("Walk", false);
+        
+        if (Input.GetKeyDown (KeyCode.F) && GameObject.FindGameObjectWithTag("Player").GetComponent<playerstat>().curMP > GameObject.FindGameObjectWithTag("Player").GetComponent<playerstat>().minEnerjyForHit && !IsAnimationPlaying("Attack")) {
+
+            GameObject.FindGameObjectWithTag("Player").GetComponent<playerstat>().curMP -= GameObject.FindGameObjectWithTag("Player").GetComponent<playerstat>().minEnerjyForHit;
+
+            animator.SetBool ("Walk", false);
 			animator.SetTrigger ("Attack");
             triggerDamage.SetActive(true);
 		}
-		
+
+        if (Input.GetKeyDown(KeyCode.Tab) && hpBottle_player.hp > 0)
+        {
+           // animator.SetBool("Walk", false);
+            animator.SetTrigger("HP_bottle");            
+        }
+        
+    }
+
+    // для проверки окончания анимации
+    public bool IsAnimationPlaying(string animationName)
+    {
+        // берем информацию о состоянии
+        var animatorStateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        // смотрим, есть ли в нем имя какой-то анимации, то возвращаем true
+        if (animatorStateInfo.IsName(animationName))
+            return true;
+
+        return false;
     }
 }

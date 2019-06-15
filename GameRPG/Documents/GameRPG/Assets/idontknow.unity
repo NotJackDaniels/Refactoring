@@ -1396,7 +1396,7 @@ Transform:
   - {fileID: 310131941}
   - {fileID: 1465837821}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &70673723
 GameObject:
@@ -1737,7 +1737,7 @@ Transform:
   - {fileID: 76473615}
   - {fileID: 2064594717}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &138596030
 Prefab:
@@ -2614,7 +2614,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4661929206199864, guid: c230cf9ffea1ef74b9eca483ad69d225, type: 2}
       propertyPath: m_RootOrder
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 1322823532792000, guid: c230cf9ffea1ef74b9eca483ad69d225, type: 2}
       propertyPath: m_Name
@@ -3457,7 +3457,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4266714643848270, guid: 2e2ed77b6686b13478c958cacf9a77c3, type: 2}
       propertyPath: m_RootOrder
-      value: 38
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 4266714643848270, guid: 2e2ed77b6686b13478c958cacf9a77c3, type: 2}
       propertyPath: m_LocalScale.x
@@ -4373,6 +4373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6864c6d0c0517e643af06464aa3c6818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
   damageCapsule: {fileID: 0}
   timeOfEachAttack: 1
 --- !u!1 &425494109
@@ -8469,7 +8470,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4328465830524420, guid: 3d7ed3a31ab8f79448604ec3148d300c, type: 2}
       propertyPath: m_RootOrder
-      value: 43
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 4328465830524420, guid: 3d7ed3a31ab8f79448604ec3148d300c, type: 2}
       propertyPath: m_LocalScale.x
@@ -8856,7 +8857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4266714643848270, guid: 2e2ed77b6686b13478c958cacf9a77c3, type: 2}
       propertyPath: m_RootOrder
-      value: 36
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4266714643848270, guid: 2e2ed77b6686b13478c958cacf9a77c3, type: 2}
       propertyPath: m_LocalScale.x
@@ -9643,7 +9644,7 @@ MonoBehaviour:
   attackDistance: 2
   currentDistance: 0
   rotationSpeed: 7
-  healthMonster: 20
+  healthMonster: 15
 --- !u!136 &968519667
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9705,7 +9706,7 @@ Transform:
   - {fileID: 661397806}
   - {fileID: 417936364}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &968519671
 NavMeshAgent:
@@ -9739,6 +9740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6864c6d0c0517e643af06464aa3c6818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
   damageCapsule: {fileID: 417936363}
   timeOfEachAttack: 0.6
 --- !u!1001 &970404732
@@ -10727,7 +10729,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4266714643848270, guid: 2e2ed77b6686b13478c958cacf9a77c3, type: 2}
       propertyPath: m_RootOrder
-      value: 40
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 4266714643848270, guid: 2e2ed77b6686b13478c958cacf9a77c3, type: 2}
       propertyPath: m_LocalScale.x
@@ -10800,7 +10802,7 @@ Transform:
   - {fileID: 2029091515}
   - {fileID: 979287710}
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1114197569
 GameObject:
@@ -11455,7 +11457,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4266714643848270, guid: 2e2ed77b6686b13478c958cacf9a77c3, type: 2}
       propertyPath: m_RootOrder
-      value: 32
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4266714643848270, guid: 2e2ed77b6686b13478c958cacf9a77c3, type: 2}
       propertyPath: m_LocalScale.x
@@ -12232,7 +12234,7 @@ Transform:
   - {fileID: 1011212816}
   - {fileID: 2090408690}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1336838365
 MonoBehaviour:
@@ -12246,6 +12248,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upHP: 30
+  upEnerjy: 0.1
+  upPassiveHP: 0.01
+  minEnerjyForHit: 5
   curHP: 0
   curMP: 0
   curEXP: 0
@@ -13118,7 +13123,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1406774077
 GameObject:
@@ -15667,7 +15672,7 @@ GameObject:
   - component: {fileID: 1735391890}
   m_Layer: 0
   m_Name: TriggerDamage
-  m_TagString: Untagged
+  m_TagString: axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15709,6 +15714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9803652b0b3718d4dad035664afeb9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
 --- !u!65 &1735391888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17265,7 +17271,7 @@ Transform:
   - {fileID: 34076237}
   - {fileID: 1803377433}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1912400924
 MeshRenderer:
@@ -19126,7 +19132,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4701533404137306, guid: 41093631723a72d42bccc0b698461fd2, type: 2}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4701533404137306, guid: 41093631723a72d42bccc0b698461fd2, type: 2}
       propertyPath: m_LocalScale.x

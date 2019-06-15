@@ -4,7 +4,12 @@ using stats; //Используем пространство stats
 
 public class playerstat : MonoBehaviour
 {
-    public int upHP;
+    public int upHP; //восстановление здоровья с банки
+    public float upEnerjy = 0.1f; // пассивное восстановление энергии
+    public float upPassiveHP = 0.01f; // пассивное восстановление HP
+    public int minEnerjyForHit = 5; // минимальная энергия для удара
+
+
     public Stats stats = new Stats(1, 600, 20, 20, 20); //Объявляем новый объект Stats 
     public static bool death; //Глобальная переменная отвечающа нам жив ли персонаж 
     int pointstat = 0; //кол-во поинтов дающихся при повышении 
@@ -14,7 +19,7 @@ public class playerstat : MonoBehaviour
     public float curEXP; //кол-во опыта 
 
     void Start()
-    {
+    {        
         death = false; //По умолчанию персонаж жив 
         Time.timeScale = 1; //Игра работает 
         curHP = stats.HP; //В начале у персонажа кол-во жизней максимально 
@@ -77,7 +82,20 @@ public class playerstat : MonoBehaviour
                 curHP = stats.HP;
             else
                 curHP += upHP;
-        }
+        }        
+
+        // пассивное восстанавливаем энергию
+        if (curMP + upEnerjy > stats.MP)
+            curMP = stats.MP;
+        else
+            curMP += upEnerjy;
+
+        // пассивное восстановление HP
+        if (curHP + upPassiveHP > stats.HP)
+            curHP = stats.HP;
+        else
+            curHP += upPassiveHP;
+
     }
     void OnGUI()
     {
