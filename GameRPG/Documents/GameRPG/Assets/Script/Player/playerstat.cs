@@ -4,6 +4,7 @@ using stats; //Используем пространство stats
 
 public class playerstat : MonoBehaviour
 {
+    public int upHP;
     public Stats stats = new Stats(1, 600, 20, 20, 20); //Объявляем новый объект Stats 
     public static bool death; //Глобальная переменная отвечающа нам жив ли персонаж 
     int pointstat = 0; //кол-во поинтов дающихся при повышении 
@@ -64,6 +65,18 @@ public class playerstat : MonoBehaviour
             stats.lvlUP(); //повышаем уровень 
             curEXP = 0; //кол-во опыта ставим 0 
             pointstat += 5; //Добавляем очки статов 
+        }
+
+        // бутылки со здоровьем
+        if (Input.GetKeyDown(KeyCode.Tab) && hpBottle_player.hp > 0)
+        {
+            hpBottle_player.hp -= 1;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<hpBottle_player>().TextHP.text = hpBottle_player.hp.ToString();
+
+            if (curHP + upHP > stats.HP)
+                curHP = stats.HP;
+            else
+                curHP += upHP;
         }
     }
     void OnGUI()

@@ -70,6 +70,7 @@
      <Compile Include="Assets\Script\Player\AxeDamage.cs" />
      <Compile Include="Assets\Script\Player\BodyMove.cs" />
      <Compile Include="Assets\Script\Player\CameraControll.cs" />
+     <Compile Include="Assets\Script\Player\hpBottle_player.cs" />
      <Compile Include="Assets\Script\Player\money_player.cs" />
      <Compile Include="Assets\Script\Player\PlayerBarDisplay.cs" />
      <Compile Include="Assets\Script\Player\playerstat.cs" />
