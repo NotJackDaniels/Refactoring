@@ -26,7 +26,6 @@ public class FirstQuestNpcDialog : MonoBehaviour {
             Dialog2.SetActive(false);
         }
     }
-
     private void OnTriggerEnter(Collider col)
     {
         if ( col.tag == "Player" && Dialog1isUse == false)
