@@ -3,6 +3,8 @@
 public class ThirdPersonCharacterController : MonoBehaviour
 {
     public float Speed;
+    public float speedRun;
+    public float enerjyForRun;
 
 
     void Start()
@@ -18,9 +20,22 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
     void PlayerMovement()
     {
-        float hor = Input.GetAxis("Horizontal");
-        float ver = Input.GetAxis("Vertical");
-        Vector3 playerMovement = new Vector3(hor, 0f, ver).normalized * Speed * Time.deltaTime;
-        transform.Translate(playerMovement, Space.Self);
+        if (Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S)) && GameObject.FindGameObjectWithTag("Player").GetComponent<playerstat>().curMP > enerjyForRun)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<playerstat>().curMP -= enerjyForRun;
+
+            float hor = Input.GetAxis("Horizontal");
+            float ver = Input.GetAxis("Vertical");
+            Vector3 playerMovement = new Vector3(hor, 0f, ver).normalized * speedRun * Time.deltaTime;
+            transform.Translate(playerMovement, Space.Self);
+        }
+        else
+        {
+            float hor = Input.GetAxis("Horizontal");
+            float ver = Input.GetAxis("Vertical");
+            Vector3 playerMovement = new Vector3(hor, 0f, ver).normalized * Speed * Time.deltaTime;
+            transform.Translate(playerMovement, Space.Self);
+        }
+       
     }
 }
