@@ -7,20 +7,22 @@ public class EnemyAI : MonoBehaviour
     public int EnemyCoins = 20;
     public int EXP = 20;
 
+    public GameObject pointStart;
     public bool QuestKillGoblinsInForrest = false;
     public float seeDistance = 5f;
     public float triggerDistance = 5f;
     private float currentTriggerDistance;
     public float attackDistance = 1f;
-    public float currentDistance;
+    private float currentDistance;
+    private float currentDistanceFromStart;
     public float rotationSpeed = 1f;
     private Transform target;
+    private Transform targetStart;
     public int healthMonster;
     Animator animator;
     Vector3 heading;
     NavMeshAgent agent;
     CapsuleCollider capsuleCollider;
-
 
     void Start()
     {
@@ -30,51 +32,76 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.isStopped = true;
         currentTriggerDistance = triggerDistance;
+
+        // запоминаем начальное положение        
+        targetStart = pointStart.transform;
     }
 
 
     void Update()
     {
-        if(healthMonster > 0)
-        { 
+        if (healthMonster > 0)
+        {
+            target = GameObject.FindWithTag("Player").transform;
             currentDistance = Vector3.Distance(transform.position, target.position);
 
-            agent.SetDestination(target.position);
-
-            heading = (transform.position - target.position).normalized;
-            heading.y = 0;
-
-            if (currentDistance <= attackDistance) //зона атаки (вплотную к игроку)
+            // Enemy возвращается в начальную позицию, если от него убежать далеко
+            if (currentDistance >= seeDistance)
             {
+                currentDistanceFromStart = Vector3.Distance(transform.position, targetStart.position);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(-heading), rotationSpeed);
-                animator.SetBool("Run", false);
-                animator.SetBool("Attack", true);
+
+                if (currentDistanceFromStart <= 3) animator.SetBool("Run", false);
+                if (currentDistanceFromStart > 3)
+                {
+                    agent.SetDestination(targetStart.position);
+
+                    heading = (transform.position - targetStart.position).normalized;
+                    heading.y = 0;
+                }
+
+
             }
             else
             {
-                animator.SetBool("Attack", false);
-                if (currentDistance <= currentTriggerDistance) //зона триггера (бежит к игроку)
+                agent.SetDestination(target.position);
+
+                heading = (transform.position - target.position).normalized;
+                heading.y = 0;
+
+                if (currentDistance <= attackDistance) //зона атаки (вплотную к игроку)
                 {
-                    currentTriggerDistance = seeDistance;
-                    animator.SetBool("Run", true);
-                    agent.isStopped = false; //враг начинает бежать
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(-heading), rotationSpeed);
+                    animator.SetBool("Run", false);
+                    animator.SetBool("Attack", true);
                 }
                 else
                 {
-                    agent.isStopped = true; //останавливает врага
-                    animator.SetBool("Run", false);
-                    if (currentDistance <= seeDistance) //зона видимости (поворачивается к игроку)
+                    animator.SetBool("Attack", false);
+                    if (currentDistance <= currentTriggerDistance) //зона триггера (бежит к игроку)
                     {
-                        animator.SetBool("PrepareForBattle", true);
-                        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(-heading), rotationSpeed);
+                        currentTriggerDistance = seeDistance;
+                        animator.SetBool("Run", true);
+                        agent.isStopped = false; //враг начинает бежать
                     }
-                    else //за пределами зоны видимости
+                    else
                     {
-                        animator.SetBool("PrepareForBattle", false);
-                        currentTriggerDistance = triggerDistance;
+                        agent.isStopped = true; //останавливает врага
+                        animator.SetBool("Run", false);
+                        if (currentDistance <= seeDistance) //зона видимости (поворачивается к игроку)
+                        {
+                            animator.SetBool("PrepareForBattle", true);
+                            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(-heading), rotationSpeed);
+                        }
+                        else //за пределами зоны видимости
+                        {
+                            animator.SetBool("PrepareForBattle", false);
+                            currentTriggerDistance = triggerDistance;
+                        }
                     }
                 }
             }
+
 
         }
         else
@@ -86,7 +113,7 @@ public class EnemyAI : MonoBehaviour
             QuestKillGoblinsInForrest = true;
 
             // добавляем монеты в указанную ссылку
-            money_player.money += EnemyCoins; 
+            money_player.money += EnemyCoins;
             GameObject.FindGameObjectWithTag("Player").GetComponent<money_player>().TextMoney.text = money_player.money.ToString(); // вывод количеста монет на экран
             EnemyCoins = 0;
 
