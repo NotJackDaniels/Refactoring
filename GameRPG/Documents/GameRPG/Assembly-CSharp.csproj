@@ -52,7 +52,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\C&amp;C_Pack\Goblin_rouge\Script\Goblin_ro_ctrl.cs" />
+     <Compile Include="Assets\Inventory\BuyItem.cs" />
+     <Compile Include="Assets\Inventory\InventoryPanel.cs" />
      <Compile Include="Assets\Inventory\Item.cs" />
+     <Compile Include="Assets\Inventory\ItemVisual.cs" />
+     <Compile Include="Assets\Inventory\Trade.cs" />
+     <Compile Include="Assets\Inventory\TraderItems.cs" />
      <Compile Include="Assets\miniMap-TurzoStudio\Scripts\FollowCharacter.cs" />
      <Compile Include="Assets\miniMap-TurzoStudio\Scripts\GUIManager.cs" />
      <Compile Include="Assets\miniMap-TurzoStudio\Scripts\miniCameraScript.cs" />
@@ -82,7 +87,6 @@
      <Compile Include="Assets\Script\Player\TimeStart.cs" />
      <Compile Include="Assets\Script\Player\weaponstat.cs" />
      <Compile Include="Assets\Script\SimpleCamera.cs" />
-     <Compile Include="Assets\Script\Trade.cs" />
      <None Include="Assets\Low Poly Toon Chests\Readme.txt" />
      <None Include="Assets\C&amp;C_Pack\Goblin_rouge\readme.txt" />
      <None Include="Assets\BUILDING\Fantasy_Kingdom_Pack_Lite\Demo\Read me01.txt" />

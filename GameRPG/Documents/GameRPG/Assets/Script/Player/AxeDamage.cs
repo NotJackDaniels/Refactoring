@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AxeDamage : MonoBehaviour {
 
-    public int damage = 3;
+    static public int damage = 3;
     // Use this for initialization
     void Start()
     {
