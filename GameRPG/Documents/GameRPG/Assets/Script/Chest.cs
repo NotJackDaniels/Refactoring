@@ -6,12 +6,29 @@ public class Chest : MonoBehaviour {
 
     public int EnemyCoins;
     public int EnemyHpBottle = 1;
+    public int EXP = 40;
 
     Animator animator;
+
+    private float RandomMoney;
+    private float RandomHpBottle;
+    private float RandomEXP;
 
     // Use this for initialization
     void Start () {
         animator = GetComponent<Animator>();
+
+        // для рандомности денег в сундуке
+        RandomMoney = Random.Range(EnemyCoins * -0.5f, EnemyCoins * 0.5f);        
+        EnemyCoins += (int)RandomMoney;
+
+        // для рандомности хилок в сундуках
+        RandomHpBottle = Random.Range(EnemyHpBottle * -0.5f, EnemyHpBottle * 0.5f);        
+        EnemyHpBottle += (int)RandomHpBottle;
+
+        // для рандомности опыта в сундуках
+        RandomEXP = Random.Range(EXP * -0.5f, EXP * 0.5f);
+        EXP += (int)RandomEXP;
     }
 
     private void OnTriggerEnter(Collider col)
@@ -29,6 +46,10 @@ public class Chest : MonoBehaviour {
             hpBottle_player.hp += EnemyHpBottle;
             GameObject.FindGameObjectWithTag("Player").GetComponent<hpBottle_player>().TextHP.text = hpBottle_player.hp.ToString();
             EnemyHpBottle = 0;
+
+            // добавляем опыт игроку
+            GameObject.FindGameObjectWithTag("Player").GetComponent<playerstat>().curEXP += EXP;
+            EXP = 0;
 
         }
     }

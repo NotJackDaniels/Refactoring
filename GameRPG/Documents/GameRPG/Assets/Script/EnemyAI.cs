@@ -24,6 +24,8 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent agent;
     CapsuleCollider capsuleCollider;
 
+    private float RandomMoney;
+
     void Start()
     {
         capsuleCollider = GetComponent<CapsuleCollider>();
@@ -35,6 +37,10 @@ public class EnemyAI : MonoBehaviour
 
         // запоминаем начальное положение        
         targetStart = pointStart.transform;
+
+        // для рандомности денег у противника
+        RandomMoney = Random.Range(EnemyCoins * -0.5f, EnemyCoins * 0.5f);
+        EnemyCoins += (int)RandomMoney;
     }
 
 
