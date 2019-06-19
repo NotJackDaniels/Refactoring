@@ -10,16 +10,19 @@ public class playerstat : MonoBehaviour
     public int minEnerjyForHit = 5; // минимальная энергия для удара
 
 
-    public Stats stats = new Stats(1, 600, 20, 20, 20); //Объявляем новый объект Stats 
+    public Stats stats = new Stats(10, 600, 20, 20, 20); //Объявляем новый объект Stats 
     public static bool death; //Глобальная переменная отвечающа нам жив ли персонаж 
     int pointstat = 0; //кол-во поинтов дающихся при повышении 
     int showstat = 0; //Отображать ли окно со статами 
     public float curHP; //кол-во жизней персонаж нынешние 
     public float curMP; //кол-во маны персонажа 
-    public float curEXP; //кол-во опыта 
+    public float curEXP; //кол-во опыта     
+
+    private int lvl = 1; 
 
     void Start()
-    {        
+    {
+        stats.HP = 100;
         death = false; //По умолчанию персонаж жив 
         Time.timeScale = 1; //Игра работает 
         curHP = stats.HP; //В начале у персонажа кол-во жизней максимально 
@@ -67,6 +70,9 @@ public class playerstat : MonoBehaviour
 
         if (curEXP >= stats.EXP) //Если количество опыта у нас рано и ли больше нужного кол-ва опыта 
         {
+            lvl++;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<lvl_player>().player_LVL.text = lvl.ToString();
+
             stats.lvlUP(); //повышаем уровень 
             curEXP = 0; //кол-во опыта ставим 0 
             pointstat += 5; //Добавляем очки статов 
@@ -95,6 +101,12 @@ public class playerstat : MonoBehaviour
             curHP = stats.HP;
         else
             curHP += upPassiveHP;
+        
+
+        // добавляем значения в UI
+        GameObject.FindGameObjectWithTag("Player").GetComponent<UI_hp>().player_HP.text = ((int)curHP).ToString()+'/'+ ((int)stats.HP).ToString();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<UI_Enerjy>().player_enerjy.text = ((int)(curMP / stats.MP * 100)).ToString() + '%';
+        GameObject.FindGameObjectWithTag("Player").GetComponent<UI_EXP>().player_exp.text = ((int)curEXP).ToString() + '/' + ((int)stats.EXP).ToString();
 
     }
     void OnGUI()

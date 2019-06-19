@@ -78,6 +78,7 @@
      <Compile Include="Assets\Script\Player\BodyMove.cs" />
      <Compile Include="Assets\Script\Player\CameraControll.cs" />
      <Compile Include="Assets\Script\Player\hpBottle_player.cs" />
+     <Compile Include="Assets\Script\Player\lvl_player.cs" />
      <Compile Include="Assets\Script\Player\money_player.cs" />
      <Compile Include="Assets\Script\Player\PlayerBarDisplay.cs" />
      <Compile Include="Assets\Script\Player\playerstat.cs" />
@@ -86,6 +87,9 @@
      <Compile Include="Assets\Script\Player\Stats.cs" />
      <Compile Include="Assets\Script\Player\ThirdPersonCharacterController.cs" />
      <Compile Include="Assets\Script\Player\TimeStart.cs" />
+     <Compile Include="Assets\Script\Player\UI_Enerjy.cs" />
+     <Compile Include="Assets\Script\Player\UI_EXP.cs" />
+     <Compile Include="Assets\Script\Player\UI_hp.cs" />
      <Compile Include="Assets\Script\Player\weaponstat.cs" />
      <Compile Include="Assets\Script\SimpleCamera.cs" />
      <None Include="Assets\Low Poly Toon Chests\Readme.txt" />
