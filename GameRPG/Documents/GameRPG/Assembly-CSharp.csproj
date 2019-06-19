@@ -66,11 +66,8 @@
      <Compile Include="Assets\Script\ChangeCamera.cs" />
      <Compile Include="Assets\Script\Chest.cs" />
      <Compile Include="Assets\Script\CloudMove.cs" />
-     <Compile Include="Assets\Script\Dialog_1NextClick.cs" />
-     <Compile Include="Assets\Script\Dialog_2NextClick.cs" />
      <Compile Include="Assets\Script\EnemyAI.cs" />
      <Compile Include="Assets\Script\EnemyDamage.cs" />
-     <Compile Include="Assets\Script\FirstQuestNpcDialog.cs" />
      <Compile Include="Assets\Script\GoblinPatrulAndAgro_AI.cs" />
      <Compile Include="Assets\Script\PatrulRoadNPC_AI.cs" />
      <Compile Include="Assets\Script\Player\AnimationHero.cs" />
@@ -91,6 +88,11 @@
      <Compile Include="Assets\Script\Player\UI_EXP.cs" />
      <Compile Include="Assets\Script\Player\UI_hp.cs" />
      <Compile Include="Assets\Script\Player\weaponstat.cs" />
+     <Compile Include="Assets\Script\quests\FirstQuest\Dialog_1NextClick.cs" />
+     <Compile Include="Assets\Script\quests\FirstQuest\Dialog_2NextClick.cs" />
+     <Compile Include="Assets\Script\quests\FirstQuest\FirstQuestNpcDialog.cs" />
+     <Compile Include="Assets\Script\quests\ManualQuest\Dialog1_manual.cs" />
+     <Compile Include="Assets\Script\quests\ManualQuest\Dialog2_manual.cs" />
      <Compile Include="Assets\Script\SimpleCamera.cs" />
      <None Include="Assets\Low Poly Toon Chests\Readme.txt" />
      <None Include="Assets\C&amp;C_Pack\Goblin_rouge\readme.txt" />

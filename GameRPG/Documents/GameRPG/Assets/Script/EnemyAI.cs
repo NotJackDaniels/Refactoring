@@ -116,7 +116,9 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("Run", false);
             animator.SetBool("Die", true);
             capsuleCollider.enabled = false;
+
             QuestKillGoblinsInForrest = true;
+            //GameObject.FindGameObjectWithTag("firstQuest").GetComponent<FirstQuestNpcDialog>().Dialog1isUse = true;
 
             // добавляем монеты в указанную ссылку
             money_player.money += EnemyCoins;

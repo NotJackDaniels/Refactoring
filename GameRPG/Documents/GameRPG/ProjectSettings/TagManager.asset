@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MonsterAI
   - axe
+  - firstQuest
   layers:
   - Default
   - TransparentFX
