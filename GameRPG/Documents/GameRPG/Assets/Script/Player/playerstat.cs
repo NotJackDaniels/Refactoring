@@ -55,7 +55,7 @@ public class playerstat : MonoBehaviour
             stats.MP += 5;
             curMP = stats.MP;
 
-            GameObject.FindGameObjectWithTag("Player").GetComponent<lvl_player>().player_LVL.text = lvl.ToString();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<lvl_player>().player_LVL.text = "LVL: " + lvl.ToString();
 
             stats.lvlUP(); //повышаем уровень 
             curEXP = 0; //кол-во опыта ставим 0             
