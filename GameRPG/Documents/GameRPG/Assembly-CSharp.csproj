@@ -52,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\C&amp;C_Pack\Goblin_rouge\Script\Goblin_ro_ctrl.cs" />
+     <Compile Include="Assets\FantasyCharactersLite\Scripts\AttachToBody.cs" />
+     <Compile Include="Assets\FantasyCharactersLite\Scripts\ChangeDisplay.cs" />
+     <Compile Include="Assets\FantasyCharactersLite\Scripts\RotateAround.cs" />
      <Compile Include="Assets\Inventory\BuyItem.cs" />
      <Compile Include="Assets\Inventory\InventoryPanel.cs" />
      <Compile Include="Assets\Inventory\Item.cs" />
@@ -95,15 +98,17 @@
      <Compile Include="Assets\Script\quests\ManualQuest\Dialog2_manual.cs" />
      <Compile Include="Assets\Script\quests\ManualQuest\NpcGateDialogsChanger.cs" />
      <Compile Include="Assets\Script\SimpleCamera.cs" />
-     <None Include="Assets\Low Poly Toon Chests\Readme.txt" />
+     <None Include="Assets\NPC\Low Poly Toon Chests\Readme.txt" />
      <None Include="Assets\C&amp;C_Pack\Goblin_rouge\readme.txt" />
      <None Include="Assets\BUILDING\Fantasy_Kingdom_Pack_Lite\Demo\Read me01.txt" />
+     <None Include="Assets\NPC\Character_Witch_Dragon\ReadMe.txt" />
      <None Include="Assets\NPC\Meshtint Free Barbarian\www.meshtint.com.txt" />
      <None Include="Assets\fantasy horde_goblin\shader\fantasy horde-goblin_Compressed MaskedShader2sided.shader" />
      <None Include="Assets\SimpleSky\ReadMe.txt" />
      <None Include="Assets\Readme.txt" />
      <None Include="Assets\miniMap-TurzoStudio\Read Me First.txt" />
      <None Include="Assets\BUILDING\Baker House\Readme.txt" />
+     <None Include="Assets\FantasyCharactersLite\readme.txt" />
      <None Include="Assets\BUILDING\3DForge\FantasyExteriors\Village &amp; Towns\Documents\Blacksmith v1.0 - user guide.txt" />
      <None Include="Assets\fantasy horde_Dwarfs\Shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
      <None Include="Assets\BUILDING\FantasyHouse\06-Info\info.txt" />
