@@ -18,7 +18,7 @@ public class playerstat : MonoBehaviour
     public float curMP; //кол-во маны персонажа 
     public float curEXP; //кол-во опыта     
 
-    private int lvl = 1; 
+    private int lvl = 1;
 
     void Start()
     {
@@ -88,7 +88,7 @@ public class playerstat : MonoBehaviour
                 curHP = stats.HP;
             else
                 curHP += upHP;
-        }        
+        }
 
         // пассивное восстанавливаем энергию
         if (curMP + upEnerjy > stats.MP)
@@ -101,10 +101,10 @@ public class playerstat : MonoBehaviour
             curHP = stats.HP;
         else
             curHP += upPassiveHP;
-        
+
 
         // добавляем значения в UI
-        GameObject.FindGameObjectWithTag("Player").GetComponent<UI_hp>().player_HP.text = ((int)curHP).ToString()+'/'+ ((int)stats.HP).ToString();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<UI_hp>().player_HP.text = ((int)curHP).ToString() + '/' + ((int)stats.HP).ToString();
         GameObject.FindGameObjectWithTag("Player").GetComponent<UI_Enerjy>().player_enerjy.text = ((int)(curMP / stats.MP * 100)).ToString() + '%';
         GameObject.FindGameObjectWithTag("Player").GetComponent<UI_EXP>().player_exp.text = ((int)curEXP).ToString() + '/' + ((int)stats.EXP).ToString();
 
@@ -163,9 +163,22 @@ public class playerstat : MonoBehaviour
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            if (GUI.Button(new Rect(Screen.width / 2, Screen.height / 2, 100, 50), "Переиграть")) //Ресуем кнопку переиграть 
+
+            GUI.Box(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 150, 200, 200), "You died!");
+
+            if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 100, 100, 25), "Try again"))
             {
-                Application.LoadLevel(0);
+                Application.LoadLevel("idontknow");
+            }
+
+            //if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 25), "Settings"))
+            //{
+
+            //}
+
+            if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2, 100, 25), "Quit"))
+            {
+                Application.Quit();
             }
         }
     }
