@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Beer
   bonusName: Damage
-  itemDamage: 10
+  itemDamage: 2
   itemPrice: 20
-  itemHP: 0
+  itemHP: 10
   ItemImage: {fileID: 21300000, guid: 213c54b85a2ad3f4c9106d7fd95bf26f, type: 3}
