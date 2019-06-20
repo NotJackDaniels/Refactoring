@@ -161,6 +161,8 @@ public class playerstat : MonoBehaviour
             useGUILayout = false; //Скрываем окно статов 
         if (death == true) //Если умерли 
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             if (GUI.Button(new Rect(Screen.width / 2, Screen.height / 2, 100, 50), "Переиграть")) //Ресуем кнопку переиграть 
             {
                 Application.LoadLevel(0);
