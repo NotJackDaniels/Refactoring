@@ -32,7 +32,7 @@ public class Dialog_2NextClick : MonoBehaviour {
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             isTextNumber++;
         }
@@ -74,7 +74,9 @@ public class Dialog_2NextClick : MonoBehaviour {
                 break;                
             default:                
                 Text6.SetActive(false);
-                firstQuestNpcDialog.EndDialogs2 = true;                
+                firstQuestNpcDialog.EndDialogs2 = true;
+                Time.timeScale = 1;
+                firstQuestNpcDialog.Dialog2.SetActive(false);
                 break;
         }
     }

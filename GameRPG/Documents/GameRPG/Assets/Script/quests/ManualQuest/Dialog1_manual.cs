@@ -11,12 +11,12 @@ public class Dialog1_manual : MonoBehaviour {
   
 
     public short isTextNumber;
-    public FirstQuestNpcDialog firstQuestNpcDialog;
+    public NpcGateDialogsChanger npcgatedialogschanger;
 
     // Use this for initialization
     void Start()
     {
-        if (firstQuestNpcDialog.Dialog1 == true)
+        if (npcgatedialogschanger.Dialog1 == true)
         {
             isTextNumber = 0;
         }
@@ -50,7 +50,8 @@ public class Dialog1_manual : MonoBehaviour {
                 break;            
             default:
                 Text3.SetActive(false);
-                firstQuestNpcDialog.EndDialogs1 = true;
+                npcgatedialogschanger.EndDialogs1 = true;
+                npcgatedialogschanger.Dialog1.SetActive(false);
                 break;
         }
     }

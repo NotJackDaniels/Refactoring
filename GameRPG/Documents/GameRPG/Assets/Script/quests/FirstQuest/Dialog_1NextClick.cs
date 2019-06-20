@@ -64,7 +64,9 @@ public class Dialog_1NextClick : MonoBehaviour {
                 default:
                     Text6.SetActive(false);
                     firstQuestNpcDialog.EndDialogs1 = true;
-                    break;    
+                    Time.timeScale = 1;
+                    firstQuestNpcDialog.Dialog1.SetActive(false);
+                break;    
         }
     }
 }

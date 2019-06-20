@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4397559, g: 0.48818153, b: 0.56839716, a: 1}
+  m_IndirectSpecularColor: {r: 0.43975616, g: 0.4881816, b: 0.5683976, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5687,9 +5687,9 @@ RectTransform:
   m_Father: {fileID: 3119882}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 175}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &386664708
@@ -13773,7 +13773,7 @@ MonoBehaviour:
   Text2: {fileID: 1446020734}
   Text3: {fileID: 1605554806}
   isTextNumber: 100
-  firstQuestNpcDialog: {fileID: 965056086}
+  npcgatedialogschanger: {fileID: 965056086}
 --- !u!1 &919966177
 GameObject:
   m_ObjectHideFlags: 0
@@ -14415,8 +14415,8 @@ GameObject:
   - component: {fileID: 965056089}
   - component: {fileID: 965056088}
   - component: {fileID: 965056087}
-  - component: {fileID: 965056086}
   - component: {fileID: 965056090}
+  - component: {fileID: 965056086}
   m_Layer: 0
   m_Name: ManualQuest
   m_TagString: Untagged
@@ -14432,7 +14432,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 965056085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70b72eb16dd05a249a37b71165d305ff, type: 3}
+  m_Script: {fileID: 11500000, guid: b8c7800f118ef2c49a14b93d206773e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EndDialogs1: 0
@@ -14524,12 +14524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb450ac54f2191646be55ccd338f4f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EndDialogs1: 0
-  EndDialogs2: 0
-  Dialog1: {fileID: 916110779}
-  Dialog2: {fileID: 1512208414}
-  Dialog1isUse: 0
-  Dialog2isUse: 0
 --- !u!1 &966786974
 GameObject:
   m_ObjectHideFlags: 0
@@ -15705,9 +15699,9 @@ RectTransform:
   m_Father: {fileID: 3119882}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 175}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1038553340
@@ -21577,7 +21571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 2108593338}
   isTextNumber: 100
-  firstQuestNpcDialog: {fileID: 965056086}
+  npcgatedialogschanger: {fileID: 965056086}
 --- !u!114 &1512208417
 MonoBehaviour:
   m_ObjectHideFlags: 0

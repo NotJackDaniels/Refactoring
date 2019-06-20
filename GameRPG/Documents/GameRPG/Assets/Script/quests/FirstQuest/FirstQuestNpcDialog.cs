@@ -19,13 +19,10 @@ public class FirstQuestNpcDialog : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if ( EndDialogs1 == true && (EndDialogs2 == true||  Dialog2isUse == false))
-        {
-           Time.timeScale = 1;
-            Dialog1.SetActive(false);
-            Dialog2.SetActive(false);
-        }
+
     }
+
+
     private void OnTriggerEnter(Collider col)
     {
         if ( col.tag == "Player" && Dialog1isUse == false)
@@ -35,11 +32,11 @@ public class FirstQuestNpcDialog : MonoBehaviour {
             Dialog1isUse = true;
         }
 
-        else if ( col.tag == "Player" && Dialog1isUse == true && enemiai.QuestKillGoblinsInForrest == true)
+        else if ( col.tag == "Player" && Dialog1isUse == true && Dialog2isUse == false && enemiai.QuestKillGoblinsInForrest == true)
         {
-            Time.timeScale = 0;
-            Dialog2.SetActive(true);
             Dialog2isUse = true;
+            Time.timeScale = 0;
+            Dialog2.SetActive(true);         
         }
     }
 

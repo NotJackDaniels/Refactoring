@@ -8,16 +8,16 @@ public class Dialog2_manual : MonoBehaviour {
     public GameObject Text;    
 
     public short isTextNumber;
-    public FirstQuestNpcDialog firstQuestNpcDialog;
+    public NpcGateDialogsChanger npcgatedialogschanger;
 
     // Use this for initialization
     void Start()
     {
-        if (firstQuestNpcDialog.Dialog2 == true)
+        if (npcgatedialogschanger.Dialog2 == true)
         {
             isTextNumber = 0;
         }
-        firstQuestNpcDialog.EndDialogs2 = false;
+        npcgatedialogschanger.EndDialogs2 = false;
     }
 
     // Update is called once per frame
@@ -37,7 +37,8 @@ public class Dialog2_manual : MonoBehaviour {
            
             default:
                 Text.SetActive(false);                
-                firstQuestNpcDialog.EndDialogs2 = true;
+                npcgatedialogschanger.EndDialogs2 = true;
+                npcgatedialogschanger.Dialog2.SetActive(false);
                 break;
         }        
     }

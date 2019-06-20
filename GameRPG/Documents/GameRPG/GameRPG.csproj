@@ -284,21 +284,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\C&amp;C_Pack\Goblin_rouge\Script\Goblin_ro_ctrl.cs" />
+    <Compile Include="Assets\Inventory\BuyItem.cs" />
+    <Compile Include="Assets\Inventory\InventoryPanel.cs" />
+    <Compile Include="Assets\Inventory\Item.cs" />
+    <Compile Include="Assets\Inventory\ItemVisual.cs" />
+    <Compile Include="Assets\Inventory\Trade.cs" />
+    <Compile Include="Assets\Inventory\TraderItems.cs" />
     <Compile Include="Assets\miniMap-TurzoStudio\Scripts\FollowCharacter.cs" />
     <Compile Include="Assets\miniMap-TurzoStudio\Scripts\GUIManager.cs" />
     <Compile Include="Assets\miniMap-TurzoStudio\Scripts\miniCameraScript.cs" />
     <Compile Include="Assets\miniMap-TurzoStudio\Scripts\Player.cs" />
     <Compile Include="Assets\Script\CatAI.cs" />
     <Compile Include="Assets\Script\ChangeCamera.cs" />
-    <Compile Include="Assets\Script\Dialog_1NextClick.cs" />
-    <Compile Include="Assets\Script\Dialog_2NextClick.cs" />
+    <Compile Include="Assets\Script\Chest.cs" />
+    <Compile Include="Assets\Script\CloudMove.cs" />
     <Compile Include="Assets\Script\EnemyAI.cs" />
     <Compile Include="Assets\Script\EnemyDamage.cs" />
-    <Compile Include="Assets\Script\FirstQuestNpcDialog.cs" />
+    <Compile Include="Assets\Script\GoblinPatrulAndAgro_AI.cs" />
+    <Compile Include="Assets\Script\PatrulRoadNPC_AI.cs" />
     <Compile Include="Assets\Script\Player\AnimationHero.cs" />
     <Compile Include="Assets\Script\Player\AxeDamage.cs" />
     <Compile Include="Assets\Script\Player\BodyMove.cs" />
     <Compile Include="Assets\Script\Player\CameraControll.cs" />
+    <Compile Include="Assets\Script\Player\hpBottle_player.cs" />
+    <Compile Include="Assets\Script\Player\lvl_player.cs" />
+    <Compile Include="Assets\Script\Player\money_player.cs" />
     <Compile Include="Assets\Script\Player\PlayerBarDisplay.cs" />
     <Compile Include="Assets\Script\Player\playerstat.cs" />
     <Compile Include="Assets\Script\Player\RotatePersonWithArrows.cs" />
@@ -306,14 +316,31 @@
     <Compile Include="Assets\Script\Player\Stats.cs" />
     <Compile Include="Assets\Script\Player\ThirdPersonCharacterController.cs" />
     <Compile Include="Assets\Script\Player\TimeStart.cs" />
+    <Compile Include="Assets\Script\Player\UI_Enerjy.cs" />
+    <Compile Include="Assets\Script\Player\UI_EXP.cs" />
+    <Compile Include="Assets\Script\Player\UI_hp.cs" />
     <Compile Include="Assets\Script\Player\weaponstat.cs" />
+    <Compile Include="Assets\Script\quests\FirstQuest\Dialog_1NextClick.cs" />
+    <Compile Include="Assets\Script\quests\FirstQuest\Dialog_2NextClick.cs" />
+    <Compile Include="Assets\Script\quests\FirstQuest\FirstQuestNpcDialog.cs" />
+    <Compile Include="Assets\Script\quests\ManualQuest\Dialog1_manual.cs" />
+    <Compile Include="Assets\Script\quests\ManualQuest\Dialog2_manual.cs" />
+    <Compile Include="Assets\Script\quests\ManualQuest\NpcGateDialogsChanger.cs" />
     <Compile Include="Assets\Script\SimpleCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BUILDING\3DForge\FantasyExteriors\Village &amp; Towns\Documents\Blacksmith v1.0 - user guide.txt" />
+    <None Include="Assets\BUILDING\Baker House\Readme.txt" />
+    <None Include="Assets\BUILDING\FantasyHouse\06-Info\info.txt" />
     <None Include="Assets\BUILDING\Fantasy_Kingdom_Pack_Lite\Demo\Read me01.txt" />
+    <None Include="Assets\BUILDING\Mushroom house\StandardDoubleSided.shader" />
     <None Include="Assets\C&amp;C_Pack\Goblin_rouge\readme.txt" />
     <None Include="Assets\FantasyEnvironments\Environments\README.txt" />
+    <None Include="Assets\Low Poly Toon Chests\Readme.txt" />
+    <None Include="Assets\NPC\Medieval_Toon_Character\ReadMe.txt" />
+    <None Include="Assets\NPC\Meshtint Free Barbarian\www.meshtint.com.txt" />
+    <None Include="Assets\Readme.txt" />
+    <None Include="Assets\SimpleSky\ReadMe.txt" />
     <None Include="Assets\fantasy horde_Dwarfs\Shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
     <None Include="Assets\fantasy horde_goblin\shader\fantasy horde-goblin_Compressed MaskedShader2sided.shader" />
     <None Include="Assets\miniMap-TurzoStudio\Read Me First.txt" />
