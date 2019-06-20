@@ -10108,25 +10108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f5b2ce88273534596ecfe9c785a3fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyCoins: 20
-  EXP: 100
-  pointStart: {fileID: 945946923}
-  QuestKillGoblinsInForrest: 0
-  seeDistance: 20
-  triggerDistance: 13
-  currentTriggerDistance: 0
-  attackDistance: 2
-  currentDistance: 0
-  currentDistanceFromStart: 0
-  rotationSpeed: 7
-  target: {fileID: 0}
-  targetStart: {fileID: 0}
-  healthMonster: 15
-  animator: {fileID: 0}
-  heading: {x: 0, y: 0, z: 0}
-  agent: {fileID: 0}
-  capsuleCollider: {fileID: 0}
-  RandomMoney: 0
 --- !u!136 &637102528
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26341,25 +26322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f5b2ce88273534596ecfe9c785a3fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyCoins: 20
-  EXP: 100
-  pointStart: {fileID: 945946923}
-  QuestKillGoblinsInForrest: 0
-  seeDistance: 20
-  triggerDistance: 13
-  currentTriggerDistance: 0
-  attackDistance: 2
-  currentDistance: 0
-  currentDistanceFromStart: 0
-  rotationSpeed: 7
-  target: {fileID: 0}
-  targetStart: {fileID: 0}
-  healthMonster: 15
-  animator: {fileID: 0}
-  heading: {x: 0, y: 0, z: 0}
-  agent: {fileID: 0}
-  capsuleCollider: {fileID: 0}
-  RandomMoney: 0
 --- !u!136 &1667717580
 CapsuleCollider:
   m_ObjectHideFlags: 0
