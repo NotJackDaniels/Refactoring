@@ -6,7 +6,7 @@ public class EnemyAI : MonoBehaviour
     public int EnemyCoins = 20;
     public int EXP = 20;
 
-    public bool QuestKillGoblinsInForrest = false;
+    public bool QuestKillGoblins = false;
 
     public float seeDistance = 5f;
     public float triggerDistance = 5f;
@@ -109,7 +109,7 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("Die", true);
             capsuleCollider.enabled = false;
 
-            QuestKillGoblinsInForrest = true;
+            QuestKillGoblins = true;
             //GameObject.FindGameObjectWithTag("firstQuest").GetComponent<FirstQuestNpcDialog>().Dialog1isUse = true;
 
             // добавляем монеты в указанную ссылку

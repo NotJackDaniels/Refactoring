@@ -30,7 +30,7 @@ public class NpcGateDialogsChanger: MonoBehaviour {
             Dialog1isUse = true;
         }
 
-        else if (col.tag == "Player" && Dialog1isUse == true && Dialog2isUse == false && enemiai.QuestKillGoblinsInForrest == true)
+        else if (col.tag == "Player" && Dialog1isUse == true && Dialog2isUse == false && enemiai.QuestKillGoblins == true)
         {
             Dialog2isUse = true;
             Dialog2.SetActive(true);
