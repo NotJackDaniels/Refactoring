@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 679, y: 471}
-  m_MaxSize: {x: 14000, y: 14021}
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 11445
+  controlID: 1597
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -128,12 +128,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1259
+    width: 1095
     height: 731
-  m_MinSize: {x: 404, y: 471}
-  m_MaxSize: {x: 10000, y: 14021}
+  m_MinSize: {x: 404, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 11446
+  controlID: 1598
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,12 +152,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1259
-    height: 460
+    width: 1095
+    height: 457
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 11447
+  controlID: 1599
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,8 +174,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 335
-    height: 460
+    width: 322
+    height: 457
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
@@ -197,10 +197,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 335
+    x: 322
     y: 0
-    width: 924
-    height: 460
+    width: 773
+    height: 457
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 14}
@@ -226,9 +226,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 460
-    width: 1259
-    height: 271
+    y: 457
+    width: 1095
+    height: 274
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 17}
@@ -251,9 +251,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1259
+    x: 1095
     y: 0
-    width: 277
+    width: 441
     height: 731
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
@@ -286,10 +286,10 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 337
+    x: 324
     y: 19
-    width: 920
-    height: 439
+    width: 769
+    height: 436
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
@@ -365,14 +365,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 333
-    height: 439
+    width: 320
+    height: 436
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa4ffcff
-    m_LastClickedID: -241750
-    m_ExpandedIDs: aa4ffcff2657feff7e78feffac99fefffa58ffffaaa4ffff9efbffff00000000be8c0000
+    scrollPos: {x: 0, y: 265}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 928dffff00000000f25a00003a630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -417,10 +417,10 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 337
+    x: 324
     y: 92
-    width: 920
-    height: 439
+    width: 769
+    height: 436
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 562.6627761546084
@@ -428,9 +428,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 602.8698, y: 4.9666185, z: 123.825096}
+    m_Target: {x: 602.93787, y: 5.0911927, z: 124.01026}
     speed: 2
-    m_Value: {x: 602.8698, y: 4.9666185, z: 123.825096}
+    m_Value: {x: 602.93787, y: 5.0911927, z: 124.01026}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -454,13 +454,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.10007385, y: 0.6901867, z: 0.09729658, w: -0.71004295}
+    m_Target: {x: 0.15757443, y: 0.61108094, z: 0.12581502, w: -0.7654547}
     speed: 2
-    m_Value: {x: 0.10007385, y: 0.69018674, z: 0.09729658, w: -0.71004295}
+    m_Value: {x: 0.15757443, y: 0.61108094, z: 0.12581502, w: -0.7654547}
   m_Size:
-    m_Target: 1.050572
+    m_Target: 1.3505721
     speed: 2
-    m_Value: 1.050572
+    m_Value: 1.3505721
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -530,7 +530,6 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 1107707595550892082, guid: 6410cff524d865a4f88ec6e95bcac6d7, type: 2}
     - {fileID: 110750550, guid: 83107c796bf2ec348afb5e040bea51c8, type: 2}
-    - {fileID: 1107248654872022040, guid: 399825d5017f4e74c828800de2751cb2, type: 2}
     - {fileID: 1107023518876615074, guid: 3d11d044ffdd78f44b23e23e762c874b, type: 2}
     - {fileID: 110777494, guid: 5f0741dda2890354cbdfc8937918a284, type: 2}
     - {fileID: 1107361279860574986, guid: f5707d17377134345bd90be4ecfe045d, type: 2}
@@ -569,22 +568,6 @@ MonoBehaviour:
       e11: 0.7074546
       e12: 0
       e13: 149.22305
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.7320067
-      e01: 0
-      e02: 0
-      e03: 103.27008
-      e10: 0
-      e11: 0.7320067
-      e12: 0
-      e13: -148.53061
       e20: 0
       e21: 0
       e22: 1
@@ -837,9 +820,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 552
-    width: 1257
-    height: 250
+    y: 549
+    width: 1093
+    height: 253
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -853,19 +836,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/NPC/Character_Witch_Dragon/Models/ChaDragon/Motions
+    - Assets/Script/Enemy
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/NPC/Character_Witch_Dragon/Models/ChaDragon/Motions
+  - Assets/Script/Enemy
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\User\Documents\GitHub\Game\GameRPG\Documents\GameRPG
+  m_LastProjectPath: C:\Users\danii\Documents\GitHub\Game\GameRPG\Documents\GameRPG
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 759}
-    m_SelectedIDs: 722b0200
-    m_LastClickedID: 142194
-    m_ExpandedIDs: 00000000e227000082280000ec2800003c29000084290000282a00006e2a00007c2a0000a62a0000b42a00000c2b0000702b0000ac2b0000422c0000502c00005c2c0000362d0000d02d0000e62e0000062f00000e2f000088300000aa300000f03200007a330000d2330000ce34000016360000183600004637000092370000d2380000e638000058390000aa390000e8390000fa390000b63a0000ce3a0000de3a0000f03a0000143b0000503b0000823b0000e43b0000b23c0000d23c00002e3d00003a6200003c6200003e620000406200004262000044620000466200004862000020a3000022a3000026a3000028a30000b6310100da310100f83101000432010032320100403201000eae010010ae010012ae010014ae01004c2b0200562b02005e2b0200602b0200e0a50200faa5020000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 1720}
+    m_SelectedIDs: 86510000
+    m_LastClickedID: 20870
+    m_ExpandedIDs: 00000000803f00002c4000009a400000e840000034410000da410000204200002e420000504200005e420000b64200001c430000584300005a430000ea430000f0430000fc430000d2440000224500006a450000744500008c460000a6460000ac460000b4460000c4460000464700004e47000030480000584800003a490000a44a0000304b00008a4b00008a4c00008a4d00008c4d0000e84d0000ea4d0000f24d0000604e00000c4f00001e4f00006a4f0000aa500000be500000305100007a510000ba510000cc5100001c52000090520000a8520000b4520000c8520000ee5200003053000060530000d453000094540000b45400001a550000b0790000b2790000b4790000b6790000b8790000ba790000bc790000be790000c0790000c2790000c4790000c6790000c8790000ca79000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -893,7 +876,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e227000082280000ec2800003c29000084290000282a00006e2a00007c2a0000a62a0000b42a00000c2b0000702b0000ac2b0000422c0000502c00005c2c0000362d0000d02d0000e62e0000062f00000e2f000088300000aa300000f03200007a330000d2330000ce34000016360000183600004637000092370000d2380000e638000058390000aa390000e8390000fa390000b63a0000ce3a0000de3a0000f03a0000143b0000503b0000823b0000e43b0000b23c0000d23c00002e3d00003a6200003c6200003e620000406200004262000044620000466200004862000020a3000022a3000026a3000028a30000b6310100da310100f83101000432010032320100403201000eae010010ae010012ae010014ae01004c2b0200562b02005e2b0200602b0200e0a50200faa5020000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000803f00002c4000009a400000e840000034410000da410000204200002e420000504200005e420000b64200001c430000584300005a430000ea430000f0430000fc430000d2440000224500006a450000744500008c460000a6460000ac460000b4460000c4460000464700004e47000030480000584800003a490000a44a0000304b00008a4b00008a4c00008a4d00008c4d0000e84d0000ea4d0000f24d0000604e00000c4f00001e4f00006a4f0000aa500000be500000305100007a510000ba510000cc5100001c52000090520000a8520000b4520000c8520000ee5200003053000060530000d453000094540000b45400001a550000b0790000b2790000b4790000b6790000b8790000ba790000bc790000be790000c0790000c2790000c4790000c6790000c8790000ca79000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -997,9 +980,9 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1261
+    x: 1097
     y: 92
-    width: 275
+    width: 439
     height: 710
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}

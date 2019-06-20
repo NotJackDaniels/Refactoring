@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4397559, g: 0.48818153, b: 0.56839716, a: 1}
+  m_IndirectSpecularColor: {r: 0.43975583, g: 0.48818153, b: 0.568397, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -10114,9 +10114,19 @@ MonoBehaviour:
   QuestKillGoblinsInForrest: 0
   seeDistance: 20
   triggerDistance: 13
+  currentTriggerDistance: 0
   attackDistance: 2
+  currentDistance: 0
+  currentDistanceFromStart: 0
   rotationSpeed: 7
+  target: {fileID: 0}
+  targetStart: {fileID: 0}
   healthMonster: 15
+  animator: {fileID: 0}
+  heading: {x: 0, y: 0, z: 0}
+  agent: {fileID: 0}
+  capsuleCollider: {fileID: 0}
+  RandomMoney: 0
 --- !u!136 &637102528
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10176,7 +10186,7 @@ Animator:
   m_GameObject: {fileID: 637102523}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 741f73214c8e59045b42ebac4be91444, type: 3}
-  m_Controller: {fileID: 9100000, guid: 399825d5017f4e74c828800de2751cb2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0e38450ba6069514b8be2d035d56c691, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16268,7 +16278,7 @@ MonoBehaviour:
   Dialog2: {fileID: 1512208414}
   Dialog1isUse: 0
   Dialog2isUse: 0
-  enemiai: {fileID: 968519666}
+  enemiai: {fileID: 0}
 --- !u!65 &965056087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16455,18 +16465,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 968519665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f5b2ce88273534596ecfe9c785a3fc, type: 3}
+  m_Script: {fileID: 11500000, guid: c0ac1fdd2fc5e76469119ddda6f781e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyCoins: 20
   EXP: 100
-  pointStart: {fileID: 945946923}
   QuestKillGoblinsInForrest: 0
   seeDistance: 20
   triggerDistance: 13
   attackDistance: 2
   rotationSpeed: 7
   healthMonster: 15
+  targetIsLost: 0
+  isChasing: 0
 --- !u!136 &968519667
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16505,7 +16516,7 @@ Animator:
   m_GameObject: {fileID: 968519665}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 741f73214c8e59045b42ebac4be91444, type: 3}
-  m_Controller: {fileID: 9100000, guid: 399825d5017f4e74c828800de2751cb2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0e38450ba6069514b8be2d035d56c691, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17506,18 +17517,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1032296087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f5b2ce88273534596ecfe9c785a3fc, type: 3}
+  m_Script: {fileID: 11500000, guid: c0ac1fdd2fc5e76469119ddda6f781e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyCoins: 20
   EXP: 100
-  pointStart: {fileID: 685829269}
   QuestKillGoblinsInForrest: 0
   seeDistance: 20
   triggerDistance: 13
   attackDistance: 2
   rotationSpeed: 7
   healthMonster: 15
+  targetIsLost: 0
+  isChasing: 0
 --- !u!136 &1032296091
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17577,7 +17589,7 @@ Animator:
   m_GameObject: {fileID: 1032296087}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 741f73214c8e59045b42ebac4be91444, type: 3}
-  m_Controller: {fileID: 9100000, guid: 399825d5017f4e74c828800de2751cb2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0e38450ba6069514b8be2d035d56c691, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -20220,7 +20232,7 @@ MonoBehaviour:
   Dialog2: {fileID: 860219316}
   Dialog1isUse: 0
   Dialog2isUse: 0
-  enemiai: {fileID: 968519666}
+  enemiai: {fileID: 0}
 --- !u!65 &1220598447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26335,9 +26347,19 @@ MonoBehaviour:
   QuestKillGoblinsInForrest: 0
   seeDistance: 20
   triggerDistance: 13
+  currentTriggerDistance: 0
   attackDistance: 2
+  currentDistance: 0
+  currentDistanceFromStart: 0
   rotationSpeed: 7
+  target: {fileID: 0}
+  targetStart: {fileID: 0}
   healthMonster: 15
+  animator: {fileID: 0}
+  heading: {x: 0, y: 0, z: 0}
+  agent: {fileID: 0}
+  capsuleCollider: {fileID: 0}
+  RandomMoney: 0
 --- !u!136 &1667717580
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26397,7 +26419,7 @@ Animator:
   m_GameObject: {fileID: 1667717575}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 741f73214c8e59045b42ebac4be91444, type: 3}
-  m_Controller: {fileID: 9100000, guid: 399825d5017f4e74c828800de2751cb2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0e38450ba6069514b8be2d035d56c691, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -29546,18 +29568,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1863252914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f5b2ce88273534596ecfe9c785a3fc, type: 3}
+  m_Script: {fileID: 11500000, guid: c0ac1fdd2fc5e76469119ddda6f781e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyCoins: 20
   EXP: 100
-  pointStart: {fileID: 2067548019}
   QuestKillGoblinsInForrest: 0
   seeDistance: 20
   triggerDistance: 13
   attackDistance: 2
   rotationSpeed: 7
   healthMonster: 15
+  targetIsLost: 0
+  isChasing: 0
 --- !u!136 &1863252918
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29617,7 +29640,7 @@ Animator:
   m_GameObject: {fileID: 1863252914}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 741f73214c8e59045b42ebac4be91444, type: 3}
-  m_Controller: {fileID: 9100000, guid: 399825d5017f4e74c828800de2751cb2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0e38450ba6069514b8be2d035d56c691, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
