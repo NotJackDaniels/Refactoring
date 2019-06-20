@@ -93,6 +93,7 @@
      <Compile Include="Assets\Script\quests\FirstQuest\FirstQuestNpcDialog.cs" />
      <Compile Include="Assets\Script\quests\ManualQuest\Dialog1_manual.cs" />
      <Compile Include="Assets\Script\quests\ManualQuest\Dialog2_manual.cs" />
+     <Compile Include="Assets\Script\quests\ManualQuest\NpcGateDialogsChanger.cs" />
      <Compile Include="Assets\Script\SimpleCamera.cs" />
      <None Include="Assets\Low Poly Toon Chests\Readme.txt" />
      <None Include="Assets\C&amp;C_Pack\Goblin_rouge\readme.txt" />

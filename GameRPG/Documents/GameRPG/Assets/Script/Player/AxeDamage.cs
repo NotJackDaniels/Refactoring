@@ -23,5 +23,10 @@ public class AxeDamage : MonoBehaviour {
         {
             col.GetComponent<EnemyAI>().healthMonster -= damage;
         }
+
+        if (col.tag == "MonsterPatrulAI")
+        {
+            col.GetComponent<GoblinPatrulAndAgro_AI>().healthMonster -= damage;
+        }
     }
 }
