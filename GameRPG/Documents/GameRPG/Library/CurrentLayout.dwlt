@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 3689
+  controlID: 2911
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 3690
+  controlID: 2912
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 3691
+  controlID: 2913
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -369,24 +369,24 @@ MonoBehaviour:
     height: 482
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b8f3ffff
-    m_LastClickedID: -3144
-    m_ExpandedIDs: 88d5fdff9efbffff00000000343f0000c03f0000124300008043000046440000
+    scrollPos: {x: 0, y: 191}
+    m_SelectedIDs: c0430000
+    m_LastClickedID: 17344
+    m_ExpandedIDs: 72b1feff9efbffff0000000050460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Well1
-      m_OriginalName: Well1
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -6294
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -423,14 +423,14 @@ MonoBehaviour:
     height: 482
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1511.9379830741698
+  lastFramingTime: 1501.9160896084895
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 547.2056, y: 7.080818, z: 144.23244}
+    m_Target: {x: 523.87195, y: 10.892908, z: 140.95361}
     speed: 2
-    m_Value: {x: 547.2056, y: 7.080818, z: 144.23244}
+    m_Value: {x: 523.87195, y: 10.892908, z: 140.95361}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -454,13 +454,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.048833378, y: 0.9464158, z: -0.26904133, w: 0.17184076}
+    m_Target: {x: -0.25910372, y: -0.14001317, z: 0.03800802, w: -0.9548911}
     speed: 2
-    m_Value: {x: 0.048833378, y: 0.9464158, z: -0.26904133, w: 0.17184076}
+    m_Value: {x: -0.25910372, y: -0.14001317, z: 0.038008023, w: -0.9548911}
   m_Size:
-    m_Target: 21.831188
+    m_Target: 3.0452342
     speed: 2
-    m_Value: 21.831188
+    m_Value: 3.0452342
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -751,19 +751,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Script/quests/ManualQuest
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Script/quests/ManualQuest
+  - Assets/Script
   m_LastFoldersGridSize: 72
   m_LastProjectPath: C:\Users\Ilya\Documents\GitHub\Game\GameRPG\Documents\GameRPG
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 795}
-    m_SelectedIDs: 543c0000
-    m_LastClickedID: 15444
-    m_ExpandedIDs: 00000000c4270000642800001e290000662900000c2a0000522a0000602a00008a2a00009a2a0000f22a0000562b0000922b0000282c0000362c0000422c00001c2d0000b62d0000cc2e0000ec2e0000f42e00006e3000009030000060330000b8330000b4340000fc350000fe3500002e3700007a370000ba380000ce3800004039000092390000d0390000e23900009e3a0000b63a0000c63a0000d83a0000fc3a0000383b00006a3b0000cc3b00009a3c0000ba3c0000426000004460000046600000486000004a6000004c6000004e6000005060000000ca9a3bffffff7f
+    m_SelectedIDs: 40390000
+    m_LastClickedID: 14656
+    m_ExpandedIDs: 00000000c4270000642800001e290000662900000c2a0000522a0000602a00008a2a00009a2a0000f22a0000562b0000922b0000282c0000362c0000422c00001c2d0000b62d0000cc2e0000ec2e0000f42e00006e3000009030000060330000b8330000b4340000fc350000fe3500002e3700007a370000ba380000ce3800004039000092390000d0390000e23900009e3a0000b63a0000c63a0000d83a0000fc3a0000383b00006a3b0000cc3b00009a3c0000ba3c000080600000826000008460000086600000886000008a6000008c6000008e60000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -791,7 +791,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c4270000642800001e290000662900000c2a0000522a0000602a00008a2a00009a2a0000f22a0000562b0000922b0000282c0000362c0000422c00001c2d0000b62d0000cc2e0000ec2e0000f42e00006e3000009030000060330000b8330000b4340000fc350000fe3500002e3700007a370000ba380000ce3800004039000092390000d0390000e23900009e3a0000b63a0000c63a0000d83a0000fc3a0000383b00006a3b0000cc3b00009a3c0000ba3c0000426000004460000046600000486000004a6000004c6000004e6000005060000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000c4270000642800001e290000662900000c2a0000522a0000602a00008a2a00009a2a0000f22a0000562b0000922b0000282c0000362c0000422c00001c2d0000b62d0000cc2e0000ec2e0000f42e00006e3000009030000060330000b8330000b4340000fc350000fe3500002e3700007a370000ba380000ce3800004039000092390000d0390000e23900009e3a0000b63a0000c63a0000d83a0000fc3a0000383b00006a3b0000cc3b00009a3c0000ba3c000080600000826000008460000086600000886000008a6000008c6000008e60000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
