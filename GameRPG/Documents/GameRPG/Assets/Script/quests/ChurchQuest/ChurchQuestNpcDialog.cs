@@ -47,6 +47,7 @@ public class ChurchQuestNpcDialog : MonoBehaviour {
         else if (col.tag == "Player" && Dialog1isUse && !Dialog2isUse && GoblinsDead)
         {
             Dialog2isUse = true;
+            Time.timeScale = 0;
             Dialog2.SetActive(true);
         }
     }

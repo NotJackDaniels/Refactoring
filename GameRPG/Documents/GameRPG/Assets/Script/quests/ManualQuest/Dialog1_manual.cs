@@ -51,6 +51,7 @@ public class Dialog1_manual : MonoBehaviour {
             default:
                 Text3.SetActive(false);
                 npcgatedialogschanger.EndDialogs1 = true;
+                Time.timeScale = 1;
                 npcgatedialogschanger.Dialog1.SetActive(false);
                 break;
         }

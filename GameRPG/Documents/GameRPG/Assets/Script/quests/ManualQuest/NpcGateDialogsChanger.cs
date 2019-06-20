@@ -26,6 +26,7 @@ public class NpcGateDialogsChanger: MonoBehaviour {
     {
         if (col.tag == "Player" && Dialog1isUse == false)
         {
+            Time.timeScale = 0;
             Dialog1.SetActive(true);
             Dialog1isUse = true;
         }
@@ -33,6 +34,7 @@ public class NpcGateDialogsChanger: MonoBehaviour {
         else if (col.tag == "Player" && Dialog1isUse == true && Dialog2isUse == false && enemiai.QuestKillGoblins == true)
         {
             Dialog2isUse = true;
+            Time.timeScale = 0;
             Dialog2.SetActive(true);
         }
     }

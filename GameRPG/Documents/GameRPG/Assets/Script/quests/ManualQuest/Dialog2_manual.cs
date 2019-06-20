@@ -39,6 +39,7 @@ public class Dialog2_manual : MonoBehaviour {
                 Text.SetActive(false);                
                 npcgatedialogschanger.EndDialogs2 = true;
                 npcgatedialogschanger.Dialog2.SetActive(false);
+                Time.timeScale = 1;
                 break;
         }        
     }

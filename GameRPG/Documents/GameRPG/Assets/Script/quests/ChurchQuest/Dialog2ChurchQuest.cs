@@ -22,6 +22,7 @@ public class Dialog2ChurchQuest : MonoBehaviour {
         {
             Text.SetActive(false);
             churchQuestNpcDialog.EndDialogs2 = true;
+            Time.timeScale = 1;
             churchQuestNpcDialog.Dialog2.SetActive(false);
         }   
     }        

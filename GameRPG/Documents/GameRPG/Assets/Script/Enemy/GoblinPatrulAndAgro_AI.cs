@@ -161,6 +161,7 @@ public class GoblinPatrulAndAgro_AI : MonoBehaviour {
             }
             else
             {
+                animator.SetBool("PrepareForBattle", false);
                 animator.SetBool("Attack", false);
                 animator.SetBool("Run", false);
                 animator.SetBool("Die", true);
