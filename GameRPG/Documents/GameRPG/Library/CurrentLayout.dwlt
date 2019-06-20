@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1264
     height: 731
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 6309
+  controlID: 4558
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 901
     height: 731
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 6594
+  controlID: 4527
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 901
     height: 457
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 6595
+  controlID: 4528
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -369,24 +369,24 @@ MonoBehaviour:
     height: 436
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 165}
-    m_SelectedIDs: d8cefdff
-    m_LastClickedID: -143656
-    m_ExpandedIDs: 1eaffeff78f5ffff00000000b64d00001c520000cc5300004c550000de590000
+    scrollPos: {x: 0, y: 208}
+    m_SelectedIDs: 80490000
+    m_LastClickedID: 18816
+    m_ExpandedIDs: b270fdff6c73fdff4082fdff5e0bfeff9efbffff00000000cc3f00001a4a0000d04a00007e4f000000510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Road_sign1 (2)
-      m_OriginalName: Road_sign1 (2)
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -15032
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -423,14 +423,14 @@ MonoBehaviour:
     height: 436
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 3292.94911555243
+  lastFramingTime: 1156.953961534777
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 559.94574, y: 15.156387, z: 206.70848}
+    m_Target: {x: 589.19495, y: 5.281113, z: 228.73357}
     speed: 2
-    m_Value: {x: 559.94574, y: 15.156387, z: 206.70848}
+    m_Value: {x: 589.19495, y: 5.281113, z: 228.73357}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -454,13 +454,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.13629903, y: -0.22664304, z: 0.032035276, w: 0.9638617}
+    m_Target: {x: -0.032921527, y: -0.9657256, z: 0.15434138, w: -0.20608026}
     speed: 2
-    m_Value: {x: 0.13629903, y: -0.22664304, z: 0.032035276, w: 0.9638617}
+    m_Value: {x: -0.032921527, y: -0.9657256, z: 0.15434138, w: -0.20608026}
   m_Size:
-    m_Target: 57.650642
+    m_Target: 10.3895855
     speed: 2
-    m_Value: 57.650642
+    m_Value: 10.3895855
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -543,6 +543,7 @@ MonoBehaviour:
     - {fileID: 110787584, guid: d1a67fe3f9f53264fa240cdce010e352, type: 2}
     - {fileID: 1107732183572993356, guid: a005431ade8f64840a17f0df63d47770, type: 2}
     - {fileID: 1107089819420961772, guid: 91f6606734bca3a4da97a6ae9341212d, type: 2}
+    - {fileID: 1107248654872022040, guid: 0e38450ba6069514b8be2d035d56c691, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.9801212
       e01: 0
@@ -784,6 +785,22 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 0}
   m_BreadCrumbs: []
@@ -836,19 +853,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Script/quests/FirstQuest
+    - Assets/Script/quests/ChurchQuest
   m_ViewMode: 1
   m_StartGridSize: 61
   m_LastFolders:
-  - Assets/Script/quests/FirstQuest
+  - Assets/Script/quests/ChurchQuest
   m_LastFoldersGridSize: 61
   m_LastProjectPath: C:\Users\Ilya\Documents\GitHub\Game\GameRPG\Documents\GameRPG
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 328}
-    m_SelectedIDs: 143b0000
-    m_LastClickedID: 15124
-    m_ExpandedIDs: 000000005e36000012370000d437000030380000cc38000016390000243900004e3900005c390000b43900001e3a00005a3a00005c3a0000043b0000123b00001e3b0000fc3b0000503c0000983c0000a23c0000ba3d0000d83d0000de3d0000e63d0000f63d0000803e0000683f0000943f00007c4000000242000090420000f84300000e4500001045000076450000784500008045000002460000b8460000ce460000204700006c48000080480000f24800008e490000a0490000f2490000684a0000804a0000904a0000a44a0000ca4a0000144b0000444b0000c24b0000a24c0000c24c0000344d0000ca750000cc750000ce750000d0750000d2750000d4750000d6750000d8750000da750000dc750000de750000e0750000e2750000e475000000ca9a3bffffff7f
+    m_SelectedIDs: 346e0000
+    m_LastClickedID: 28212
+    m_ExpandedIDs: 00000000ce270000862800004a290000a8290000502a00009c2a0000aa2a0000d42a0000e22a00003c2b0000a82b0000e42b0000e62b00008e2c00009e2c0000aa2c0000882d0000e02d00002a2e0000342e00004c2f00006a2f0000702f0000782f0000882f000012300000fa300000263100000e32000098330000263400008e350000a6360000a83600000e37000010370000183700009a370000543800006a380000be3800000c3a0000203a0000923a00002e3b0000403b0000943b00000a3c0000223c0000323c0000463c00006c3c0000b83c0000ea3c0000683d00004a3e00006a3e0000dc3e0000fa6d0000fc6d0000fe6d0000006e0000026e0000046e0000066e0000086e00000a6e00000c6e00000e6e0000106e0000126e0000146e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -876,7 +893,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005e36000012370000d437000030380000cc38000016390000243900004e3900005c390000b43900001e3a00005a3a00005c3a0000043b0000123b00001e3b0000fc3b0000503c0000983c0000a23c0000ba3d0000d83d0000de3d0000e63d0000f63d0000803e0000683f0000943f00007c4000000242000090420000f84300000e4500001045000076450000784500008045000002460000b8460000ce460000204700006c48000080480000f24800008e490000a0490000f2490000684a0000804a0000904a0000a44a0000ca4a0000144b0000444b0000c24b0000a24c0000c24c0000344d0000ca750000cc750000ce750000d0750000d2750000d4750000d6750000d8750000da750000dc750000de750000e0750000e2750000e475000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000ce270000862800004a290000a8290000502a00009c2a0000aa2a0000d42a0000e22a00003c2b0000a82b0000e42b0000e62b00008e2c00009e2c0000aa2c0000882d0000e02d00002a2e0000342e00004c2f00006a2f0000702f0000782f0000882f000012300000fa300000263100000e32000098330000263400008e350000a6360000a83600000e37000010370000183700009a370000543800006a380000be3800000c3a0000203a0000923a00002e3b0000403b0000943b00000a3c0000223c0000323c0000463c00006c3c0000b83c0000ea3c0000683d00004a3e00006a3e0000dc3e0000fa6d0000fc6d0000fe6d0000006e0000026e0000046e0000066e0000086e00000a6e00000c6e00000e6e0000106e0000126e0000146e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

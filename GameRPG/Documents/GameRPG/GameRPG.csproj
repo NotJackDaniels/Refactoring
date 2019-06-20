@@ -322,6 +322,9 @@
     <Compile Include="Assets\Script\Player\UI_EXP.cs" />
     <Compile Include="Assets\Script\Player\UI_hp.cs" />
     <Compile Include="Assets\Script\Player\weaponstat.cs" />
+    <Compile Include="Assets\Script\quests\ChurchQuest\ChurchQuestNpcDialog.cs" />
+    <Compile Include="Assets\Script\quests\ChurchQuest\Dialog1ChurchQuest.cs" />
+    <Compile Include="Assets\Script\quests\ChurchQuest\Dialog2ChurchQuest.cs" />
     <Compile Include="Assets\Script\quests\FirstQuest\Dialog_1NextClick.cs" />
     <Compile Include="Assets\Script\quests\FirstQuest\Dialog_2NextClick.cs" />
     <Compile Include="Assets\Script\quests\FirstQuest\FirstQuestNpcDialog.cs" />
