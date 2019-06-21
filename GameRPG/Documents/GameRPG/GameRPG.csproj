@@ -303,6 +303,8 @@
     <Compile Include="Assets\Script\Enemy\EnemyAI.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyDamage.cs" />
     <Compile Include="Assets\Script\Enemy\GoblinPatrulAndAgro_AI.cs" />
+    <Compile Include="Assets\Script\MainMenu\MainMenu.cs" />
+    <Compile Include="Assets\Script\MainMenu\PlayMenu.cs" />
     <Compile Include="Assets\Script\PatrulRoadNPC_AI.cs" />
     <Compile Include="Assets\Script\Player\AnimationHero.cs" />
     <Compile Include="Assets\Script\Player\AxeDamage.cs" />

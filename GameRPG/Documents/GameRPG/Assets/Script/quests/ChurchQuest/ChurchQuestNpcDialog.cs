@@ -37,14 +37,14 @@ public class ChurchQuestNpcDialog : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "Player" && !Dialog1isUse)
+        if (col.tag == "Player" && !Dialog1isUse && !GoblinsDead)
         {
             Time.timeScale = 0;
             Dialog1.SetActive(true);
             Dialog1isUse = true;
         }
 
-        else if (col.tag == "Player" && Dialog1isUse && !Dialog2isUse && GoblinsDead)
+        else if (col.tag == "Player" && !Dialog2isUse && GoblinsDead)
         {
             Dialog2isUse = true;
             Time.timeScale = 0;
